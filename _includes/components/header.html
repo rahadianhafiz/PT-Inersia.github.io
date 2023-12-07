@@ -5,7 +5,18 @@
     <div></div>
   {% endif %}
   {% include header_custom.html %}
-  {% if site.aux_links %}
-    {% include components/aux_nav.html %}
-  {% endif %}
+  <button class="btn js-toggle-dark-mode">Dark Mode</button>
+  <script>
+    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+    jtd.addEvent(toggleDarkMode, 'click', function(){
+      if (jtd.getTheme() === 'dark') {
+        jtd.setTheme('light');
+        toggleDarkMode.textContent = 'Dark Mode';
+      } else {
+        jtd.setTheme('dark');
+        toggleDarkMode.textContent = 'Light Mode';
+      }
+    });
+  </script>
 </div>
