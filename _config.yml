@@ -102,7 +102,7 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Just the Docs on GitHub":
-    - "https://github.com/rahadianhafiz/rahadianhafiz.github.io"
+    - "https://github.com/PT-Inersia/PT-Inersia.github.io"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
